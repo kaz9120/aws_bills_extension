@@ -12,6 +12,12 @@ document.getElementById('service').addEventListener('click', () => {
         });
     });
 });
+
+// アカウントの会計 account's account
+document.getElementById('account').addEventListener('click', () => {
+    // 現在のアクティブなタブの情報を取得
+    chrome.tabs.executeScript({
+        code: generateCode('charges-by-account-panel')
     }, function(results) {
         // テーブルデータをクリップボードにコピー
         var tableData = results[0];
