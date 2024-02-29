@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "AWS請求書ツール",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "AWS請求書を便利にする拡張機能",
   "action": {
     "default_popup": "popup.html"
@@ -23,7 +23,6 @@
   ],
   "permissions": [
     "activeTab",
-    "clipboardWrite",
-    "scripting"
+    "clipboardWrite"
   ]
 }
