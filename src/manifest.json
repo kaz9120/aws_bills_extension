@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "AWS請求書ツール",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "AWS請求書を便利にする拡張機能",
   "action": {
     "default_popup": "popup.html"
@@ -14,7 +14,8 @@
   "content_scripts": [
     {
       "matches": [
-        "https://us-east-1.console.aws.amazon.com/billing/*"
+        "https://us-east-1.console.aws.amazon.com/billing/*",
+        "https://*.us-east-1.console.aws.amazon.com/billing/*"
       ],
       "js": [
         "content.js"
